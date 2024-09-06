@@ -23,7 +23,7 @@ class Pet:
     @pet_type.setter
     def pet_type(self, value):
         if value not in Pet.PET_TYPES:
-            raise ValueError('Pet type not found on your system, the pet must include: {}'.format(",".join(Pet.PET_TYPES)))
+            raise ValueError('Pet type not found on your system, the pet must include: {}'.format(" ,".join(Pet.PET_TYPES)))
         else:
             self._pet_type = value
     
